@@ -1,3 +1,4 @@
+/* FONT DECLARATION BEGIN */
 @font-face {
 	font-family: "EB Garamond";
 	src: local("EB Garamond"),
@@ -11,6 +12,50 @@
 		url("/src/assets/fonts/YsabeauOffice-VariableFont_wght.ttf");
 	font-display: swap;
 }
+/* FONT DECLARATION END */
+
+/* TYPE SCALE BEGIN */
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "EB Garamond";
+	font-weight: 400;
+}
+body {
+	font-family: "Ysabeau Office";
+	font-weight: 400;
+}
+
+html {
+	font-size: 100%;
+} /* 16px */
+
+h1 {
+	font-size: 3.053rem; /* 48.8px */
+}
+
+h2 {
+	font-size: 2.442rem; /* 39.04px */
+}
+
+h3 {
+	font-size: 1.954rem; /* 31.2px */
+}
+
+h4 {
+	font-size: 1.563rem; /* 24.96px */
+}
+
+h5 {
+	font-size: 1.25rem; /* 20px */
+}
+
+small {
+	font-size: 0.8rem; /* 12.8px */
+}
+/* TYPE SCALE END */
 
 *,
 *:after,
@@ -27,11 +72,7 @@
 }
 
 :root {
-	font-family: "EB Garamond", serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
-	line-height: 1.5;
+	line-height: 5em;
 
 	color-scheme: light dark;
 	color: var(--background);
@@ -65,27 +106,14 @@ footer {
 	bottom: 0;
 }
 
-p {
-	font-family: "Ysabeau Office", sans-serif;
-}
-
 h1,
 h2,
 a,
 p {
-	font-size: 30px;
-	line-height: 2.4em;
-	font-weight: 400;
-	color: #333;
+	color: var(--background);
 	text-decoration: var(--background);
 	transition: text-decoration-color 300ms;
 }
-
-/* a:hover {
-	text-decoration: underline overline;
-	text-decoration-color: var(--primary);
-	text-underline-offset: 0.3em;
-} */
 
 ul {
 	list-style: none;

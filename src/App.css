@@ -1,4 +1,4 @@
-/* BEGIN color theme */
+/* COLOR THEME BEGIN */
 html {
 	--text: #f9efdc;
 	--background: #141910;
@@ -6,12 +6,14 @@ html {
 	--secondary: #2b2d3b;
 	--accent: #4a5ac9;
 }
-/* END color theme */
+/* COLOR THEME END */
 
-/* BEGIN mail link animation */
+/* A TAG ANIMATION BEGIN */
 a.mail {
 	text-decoration: none;
 	z-index: 1;
+	font-family: "EB Garamond";
+	font-size: 2.442rem;
 }
 
 a.mail:before {
@@ -71,4 +73,4 @@ a.mail:focus:before {
 		opacity: 0.02;
 	}
 }
-/* END mail link animation */
+/* A TAG ANIMATION END */
