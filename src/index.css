@@ -1,3 +1,15 @@
+@font-face {
+	font-family: "EB Garamond";
+	src: local("EB Garamond"),
+		url("/src/assets/fonts/EBGaramond-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "Ysabeau Office";
+	src: local("Ysabeau Office"),
+		url("/src/assets/fonts/YsabeauOffice-VariableFont_wght.ttf");
+}
+
 *,
 *:after,
 *:before {
@@ -21,7 +33,7 @@
 
 	color-scheme: light dark;
 	color: var(--background);
-	background-color: var(--text); 
+	background-color: var(--text);
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
