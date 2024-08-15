@@ -2,12 +2,14 @@
 	font-family: "EB Garamond";
 	src: local("EB Garamond"),
 		url("/src/assets/fonts/EBGaramond-VariableFont_wght.ttf");
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "Ysabeau Office";
 	src: local("Ysabeau Office"),
 		url("/src/assets/fonts/YsabeauOffice-VariableFont_wght.ttf");
+	font-display: swap;
 }
 
 *,
@@ -61,6 +63,10 @@ footer {
 footer {
 	position: fixed;
 	bottom: 0;
+}
+
+p {
+	font-family: "Ysabeau Office", sans-serif;
 }
 
 h1,
