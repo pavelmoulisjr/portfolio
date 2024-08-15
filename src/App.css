@@ -1,4 +1,4 @@
-/* Palette as CSS vars */ 
+/* BEGIN color theme */
 html {
 	--text: #f9efdc;
 	--background: #141910;
@@ -6,7 +6,9 @@ html {
 	--secondary: #2b2d3b;
 	--accent: #4a5ac9;
 }
+/* END color theme */
 
+/* BEGIN mail link animation */
 a.mail {
 	text-decoration: none;
 	z-index: 1;
@@ -27,6 +29,7 @@ a.mail:before {
 	z-index: -1;
 }
 a.mail:hover:before,
+a.mail:active:before,
 a.mail:focus:before {
 	animation: 0.25s forwards hover-v linear;
 	animation-fill-mode: forwards;
@@ -68,3 +71,4 @@ a.mail:focus:before {
 		opacity: 0.02;
 	}
 }
+/* END mail link animation */
