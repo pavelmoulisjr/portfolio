@@ -1,3 +1,12 @@
+/* Palette as CSS vars */ 
+html {
+	--text: #f9efdc;
+	--background: #141910;
+	--primary: #bba677;
+	--secondary: #2b2d3b;
+	--accent: #4a5ac9;
+}
+
 a.mail {
 	text-decoration: none;
 	z-index: 1;
@@ -5,7 +14,7 @@ a.mail {
 
 a.mail:before {
 	content: "";
-	background: #987d78;
+	background: var(--primary);
 	position: absolute;
 	width: 120%;
 	height: 5px;

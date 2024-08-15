@@ -20,8 +20,8 @@
 	line-height: 1.5;
 
 	color-scheme: light dark;
-	color: hsl(218, 22%, 10%);
-	background-color: #e2effc;
+	color: var(--background);
+	background-color: var(--text); 
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -59,13 +59,13 @@ p {
 	line-height: 2.4em;
 	font-weight: 400;
 	color: #333;
-	text-decoration: rgba(0, 0, 0, 0);
+	text-decoration: var(--background);
 	transition: text-decoration-color 300ms;
 }
 
 /* a:hover {
 	text-decoration: underline overline;
-	text-decoration-color: #a53a27;
+	text-decoration-color: var(--primary);
 	text-underline-offset: 0.3em;
 } */
 
