@@ -8,6 +8,30 @@ html {
 }
 /* COLOR THEME END */
 
+/* ANIMATED LOGO BEGIN */
+svg path {
+	stroke: var(--background);
+	stroke-width: 10;
+
+	animation: textAnimate 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+@keyframes textAnimate {
+	0% {
+		stroke-dasharray: 0 80%;
+		stroke-dashoffset: 10%;
+	}
+
+	100% {
+		stroke-dasharray: 80% 0;
+		stroke-dashoffstet: -10%;
+	}
+}
+.logo {
+	max-width: 100px;
+}
+/* ANIMATED LOGO END */
+
 /* A TAG ANIMATION BEGIN */
 a.mail {
 	text-decoration: none;
