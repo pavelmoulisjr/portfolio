@@ -12,7 +12,7 @@
 	margin-inline: auto;
   }
   
-  body div {
+  body > div {
 	display: grid;
 	gap: var(--grid-gutter);
   }
