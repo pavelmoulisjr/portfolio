@@ -1,14 +1,24 @@
-/* COLOR THEME BEGIN */
-html {
-	--text: #f9efdc;
-	--background: #141910;
-	--primary: #bba677;
-	--secondary: #2b2d3b;
-	--accent: #4a5ac9;
-}
-/* COLOR THEME END */
+/* GRID SYSTEM BEGIN */
+/* @link https://utopia.fyi/grid/calculator?c=322,16,1.2,1120,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,2xl,9 */
+:root {
+	--grid-max-width: 70.00rem;
+	--grid-gutter: var(--space-s-l, clamp(1rem, 0.3947rem + 3.0075vw, 2.5rem));
+	--grid-columns: 9;
+  }
+  
+  body {
+	max-width: var(--grid-max-width);
+	padding-inline: var(--grid-gutter);
+	margin-inline: auto;
+  }
+  
+  body div {
+	display: grid;
+	gap: var(--grid-gutter);
+  }
+/* GRID SYSTEM END */
 
-/* ANIMATED LOGO BEGIN */
+/* LOGO ANIMATION BEGIN */
 svg path {
 	stroke: var(--background);
 	stroke-width: 10;
@@ -30,9 +40,9 @@ svg path {
 .logo {
 	max-width: 100px;
 }
-/* ANIMATED LOGO END */
+/* LOGO ANIMATION END */
 
-/* A TAG ANIMATION BEGIN */
+/* MAIL ANIMATION BEGIN */
 a.mail {
 	z-index: 1;
 	font-family: "EB Garamond";
@@ -46,20 +56,17 @@ a.mail:before {
 	background: var(--primary);
 	position: absolute;
 	width: 120%;
-	height: 5px;
 	bottom: 0;
 	left: -10%;
-	border-radius: 5px;
+	border-radius: 8px;
 	transform: scaleX(0);
 	animation: 0.7s forwards no-hover-v linear;
-	animation-fill-mode: forwards;
 	z-index: -1;
 }
 a.mail:hover:before,
 a.mail:active:before,
 a.mail:focus:before {
 	animation: 0.25s forwards hover-v linear;
-	animation-fill-mode: forwards;
 }
 @keyframes hover-v {
 	0% {
@@ -98,4 +105,4 @@ a.mail:focus:before {
 		opacity: 0.02;
 	}
 }
-/* A TAG ANIMATION END */
+/* MAIL ANIMATION END */
