@@ -15,6 +15,52 @@
 /* FONT DECLARATION END */
 
 /* TYPE SCALE BEGIN */
+
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1440,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* 
+	Min viewport - 320px | 16px | 1.2 minor third
+	Max viewport - 1440px | 20px | 1.333 perfect fourth
+*/
+:root {
+	/* Step -2: 11.1111px → 11.2556px */
+	--step--2: clamp(0.6944rem, 0.6919rem + 0.0129vw, 0.7035rem);
+	/* Step -1: 13.3333px → 15.0038px */
+	--step--1: clamp(0.8333rem, 0.8035rem + 0.1491vw, 0.9377rem);
+	/* Step 0: 16px → 20px */
+	--step-0: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+	/* Step 1: 19.2px → 26.66px */
+	--step-1: clamp(1.2rem, 1.0668rem + 0.6661vw, 1.6663rem);
+	/* Step 2: 23.04px → 35.5378px */
+	--step-2: clamp(1.44rem, 1.2168rem + 1.1159vw, 2.2211rem);
+	/* Step 3: 27.648px → 47.3719px */
+	--step-3: clamp(1.728rem, 1.3758rem + 1.7611vw, 2.9607rem);
+	/* Step 4: 33.1776px → 63.1467px */
+	--step-4: clamp(2.0736rem, 1.5384rem + 2.6758vw, 3.9467rem);
+	/* Step 5: 39.8131px → 84.1745px */
+	--step-5: clamp(2.4883rem, 1.6962rem + 3.9608vw, 5.2609rem);
+}
+/* TYPE SCALE END */
+
+h1 {
+	font-size: var(--step-5);
+}
+
+h2 {
+	font-size: var(--step-4);
+}
+
+h3 {
+	font-size: var(--step-3);
+}
+
+h4 {
+	font-size: var(--step-2);
+}
+
+h5 {
+	font-size: var(--step-1);
+}
+
 h1,
 h2,
 h3,
@@ -26,36 +72,8 @@ h5 {
 body {
 	font-family: "Ysabeau Office";
 	font-weight: 400;
+	font-size: var(--step-0);
 }
-
-html {
-	font-size: 100%;
-} /* 16px */
-
-h1 {
-	font-size: 3.053rem; /* 48.8px */
-}
-
-h2 {
-	font-size: 2.442rem; /* 39.04px */
-}
-
-h3 {
-	font-size: 1.954rem; /* 31.2px */
-}
-
-h4 {
-	font-size: 1.563rem; /* 24.96px */
-}
-
-h5 {
-	font-size: 1.25rem; /* 20px */
-}
-
-small {
-	font-size: 0.8rem; /* 12.8px */
-}
-/* TYPE SCALE END */
 
 *,
 *:after,
@@ -72,8 +90,6 @@ small {
 }
 
 :root {
-	line-height: 5em;
-
 	color-scheme: light dark;
 	color: var(--background);
 	background-color: var(--text);
@@ -94,33 +110,28 @@ body {
 	position: absolute;
 	width: 100vw;
 	height: 100vh;
-}
-
-header,
-footer {
-	padding: 20px;
+	padding: 2em;
 }
 
 footer {
 	position: fixed;
-	bottom: 0;
+	bottom: 2vh;
 }
 
-h1,
+/* h1,
 h2,
 a,
 p {
 	color: var(--background);
 	text-decoration: var(--background);
 	transition: text-decoration-color 300ms;
-}
+} */
 
 ul {
 	list-style: none;
 }
 
-ul,
+/* ul,
 li {
 	display: inline;
-	margin-right: 15px;
-}
+} */

@@ -34,10 +34,11 @@ svg path {
 
 /* A TAG ANIMATION BEGIN */
 a.mail {
-	text-decoration: none;
 	z-index: 1;
 	font-family: "EB Garamond";
-	font-size: 2.442rem;
+	font-size: var(--step-3);
+	color: var(--background);
+	text-decoration: var(--background);
 }
 
 a.mail:before {
