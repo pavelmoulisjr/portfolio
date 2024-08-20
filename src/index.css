@@ -118,20 +118,6 @@ footer {
 	bottom: 2vh;
 }
 
-/* h1,
-h2,
-a,
-p {
-	color: var(--background);
-	text-decoration: var(--background);
-	transition: text-decoration-color 300ms;
-} */
-
 ul {
 	list-style: none;
 }
-
-/* ul,
-li {
-	display: inline;
-} */
