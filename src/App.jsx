@@ -1,7 +1,20 @@
+import { useState, useEffect } from "react";
 import "./App.css";
 import Logo from "./components/Logo";
+import AnimatedText from "./components/AnimatedText";
+import DarkModeToggle from "./components/DarkModeToggle";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark-mode", darkMode);
+  }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode((prevMode) => !prevMode);
+  };
+
   return (
     <>
       <header>
@@ -10,13 +23,17 @@ function App() {
         </div>
         <h1>Pavel Moulis</h1>
         <h2>↳ Fullstack Developer </h2>
+        <DarkModeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </header>
+
+      <main>{/* Add your main content here */}</main>
+
       <footer>
         <ul>
           <li>
-            <a className="mail" href="mailto:hello@pavel.dk">
+            <AnimatedText href="mailto:hello@pavel.dk" className="mail" as="h3">
               M
-            </a>
+            </AnimatedText>
           </li>
         </ul>
       </footer>
