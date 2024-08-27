@@ -1,108 +1,87 @@
 /* GRID SYSTEM BEGIN */
 /* @link https://utopia.fyi/grid/calculator?c=318,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 :root {
-	--grid-max-width: 77.50rem;
-	--grid-gutter: var(--space-s-l, clamp(1.125rem, 0.6508rem + 2.3861vw, 2.5rem));
-	--grid-columns: 12;
-  }
-  
-  body {
-	max-width: var(--grid-max-width);
-	padding-inline: var(--grid-gutter);
-	margin-inline: auto;
-  }
-  
-  body > div {
-	display: grid;
-	gap: var(--grid-gutter);
-  }
+  --grid-max-width: 77.5rem;
+  --grid-gutter: var(
+    --space-s-l,
+    clamp(1.125rem, 0.6508rem + 2.3861vw, 2.5rem)
+  );
+  --grid-columns: 12;
+}
+
+body {
+  max-width: var(--grid-max-width);
+  padding-inline: var(--grid-gutter);
+  margin-inline: auto;
+}
+
+body > div {
+  display: grid;
+  gap: var(--grid-gutter);
+}
 /* GRID SYSTEM END */
-
-/* LOGO ANIMATION BEGIN */
-svg path {
-	stroke: var(--background);
-	stroke-width: 10;
-
-	animation: textAnimate 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
-}
-
-@keyframes textAnimate {
-	0% {
-		stroke-dasharray: 0 80%;
-		stroke-dashoffset: 10%;
-	}
-
-	100% {
-		stroke-dasharray: 80% 0;
-		stroke-dashoffstet: -10%;
-	}
-}
-.logo {
-	max-width: 100px;
-}
-/* LOGO ANIMATION END */
 
 /* MAIL ANIMATION BEGIN */
 a.mail {
-	z-index: 1;
-	font-family: "EB Garamond";
-	font-size: var(--step-3);
-	color: var(--background);
-	text-decoration: var(--background);
+  z-index: 1;
+  font-family: "EB Garamond";
+  font-size: var(--step-3);
+  color: var(--background);
+  text-decoration: var(--background);
 }
 
 a.mail:before {
-	content: "";
-	background: var(--primary);
-	position: absolute;
-	width: 120%;
-	bottom: 0;
-	left: -10%;
-	border-radius: 8px;
-	transform: scaleX(0);
-	animation: 0.7s forwards no-hover-v linear;
-	z-index: -1;
+  content: "";
+  background: var(--primary);
+  position: absolute;
+  width: 120%;
+  bottom: 0;
+  left: -10%;
+  border-radius: 8px;
+  transform: scaleX(0);
+  animation: 0.7s forwards no-hover-v linear;
+  z-index: -1;
 }
 a.mail:hover:before,
 a.mail:active:before,
 a.mail:focus:before {
-	animation: 0.25s forwards hover-v linear;
+  animation: 0.25s forwards hover-v linear;
 }
 @keyframes hover-v {
-	0% {
-		transform: scaleX(0);
-		height: 5px;
-	}
-	45% {
-		transform: scaleX(1.05);
-		height: 5px;
-	}
-	55% {
-		height: 5px;
-	}
-	100% {
-		transform: scaleX(1.05);
-		height: 1.25em;
-	}
+  0% {
+    transform: scaleX(0);
+    height: 5px;
+  }
+  45% {
+    transform: scaleX(1.05);
+    height: 5px;
+  }
+  55% {
+    height: 5px;
+  }
+  100% {
+    transform: scaleX(1.05);
+    height: 1.25em;
+  }
 }
 @keyframes no-hover-v {
-	0% {
-		transform: scaleX(1.05);
-		height: 1.25em;
-	}
-	45% {
-		height: 5px;
-	}
-	55% {
-		transform: scaleX(1.05);
-		height: 5px;
-		opacity: 1;
-	}
+  0% {
+    transform: scaleX(1.05);
+    height: 1.25em;
+  }
+  45% {
+    height: 5px;
+  }
+  55% {
+    transform: scaleX(1.05);
+    height: 5px;
+    opacity: 1;
+  }
 
-	100% {
-		transform: scaleX(0);
-		height: 5px;
-		opacity: 0.02;
-	}
+  100% {
+    transform: scaleX(0);
+    height: 5px;
+    opacity: 0.02;
+  }
 }
 /* MAIL ANIMATION END */
