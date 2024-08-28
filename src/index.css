@@ -179,7 +179,8 @@ html.dark-mode {
   border: none;
   cursor: pointer;
   font-size: var(--step-2);
-  position: absolute;
+  position: fixed;
   top: var(--space-m);
   right: var(--space-m);
+  z-index: 1000;
 }

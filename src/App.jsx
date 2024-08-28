@@ -7,23 +7,24 @@ import DarkModeToggle from "./components/DarkModeToggle";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
+  // Apply dark mode class to body
   useEffect(() => {
-    document.documentElement.classList.toggle("dark-mode", darkMode);
+    if (darkMode) {
+      document.documentElement.classList.add("dark-mode");
+    } else {
+      document.documentElement.classList.remove("dark-mode");
+    }
   }, [darkMode]);
 
-  const toggleDarkMode = () => {
-    setDarkMode((prevMode) => !prevMode);
-  };
-
   return (
-    <>
+    <div className="App">
+      <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
       <header>
         <div className="logo">
           <Logo />
         </div>
         <h1>Pavel Moulis</h1>
         <h2>↳ Fullstack Developer </h2>
-        <DarkModeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </header>
 
       <main>{/* Add your main content here */}</main>
@@ -37,7 +38,7 @@ function App() {
           </li>
         </ul>
       </footer>
-    </>
+    </div>
   );
 }
 
