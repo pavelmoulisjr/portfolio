@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "./AnimatedText.css";
+import "../styles/AnimatedText.css";
 
 const AnimatedText = ({
   href,
