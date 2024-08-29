@@ -1,0 +1,73 @@
+/* COLOR THEME */
+:root {
+  --text: #f9efdc;
+  --background: #141910;
+  --primary: #bba677;
+  --secondary: #2b2d3b;
+  --accent: #4a5ac9;
+}
+
+/* Dark mode colors */
+html.dark-mode {
+  --text: #141910;
+  --background: #f9efdc;
+  --primary: #4a5ac9;
+  --secondary: #d4d2c3;
+  --accent: #bba677;
+}
+
+/* TYPOGRAPHY */
+:root {
+  /* Step -2: 12.5px → 12.8px */
+  --step--2: clamp(0.7813rem, 0.7748rem + 0.0325vw, 0.8rem);
+  /* Step -1: 15px → 16px */
+  --step--1: clamp(0.9375rem, 0.9159rem + 0.1085vw, 1rem);
+  /* Step 0: 18px → 20px */
+  --step-0: clamp(1.125rem, 1.0819rem + 0.2169vw, 1.25rem);
+  /* Step 1: 21.6px → 25px */
+  --step-1: clamp(1.35rem, 1.2767rem + 0.3688vw, 1.5625rem);
+  /* Step 2: 25.92px → 31.25px */
+  --step-2: clamp(1.62rem, 1.5051rem + 0.5781vw, 1.9531rem);
+  /* Step 3: 31.104px → 39.0625px */
+  --step-3: clamp(1.944rem, 1.7724rem + 0.8632vw, 2.4414rem);
+  /* Step 4: 37.3248px → 48.8281px */
+  --step-4: clamp(2.3328rem, 2.0848rem + 1.2476vw, 3.0518rem);
+  /* Step 5: 44.7898px → 61.0352px */
+  --step-5: clamp(2.7994rem, 2.4492rem + 1.762vw, 3.8147rem);
+}
+
+/* SPACING */
+:root {
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.5409rem + 0.1085vw, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.8534rem + 0.1085vw, 0.9375rem);
+  --space-s: clamp(1.125rem, 1.0819rem + 0.2169vw, 1.25rem);
+  --space-m: clamp(1.6875rem, 1.6228rem + 0.3254vw, 1.875rem);
+  --space-l: clamp(2.25rem, 2.1638rem + 0.4338vw, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.2457rem + 0.6508vw, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.3275rem + 0.8677vw, 5rem);
+  --space-3xl: clamp(6.75rem, 6.4913rem + 1.3015vw, 7.5rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.3125rem, 0.2047rem + 0.5423vw, 0.625rem);
+  --space-2xs-xs: clamp(0.5625rem, 0.4332rem + 0.6508vw, 0.9375rem);
+  --space-xs-s: clamp(0.875rem, 0.7457rem + 0.6508vw, 1.25rem);
+  --space-s-m: clamp(1.125rem, 0.8663rem + 1.3015vw, 1.875rem);
+  --space-m-l: clamp(1.6875rem, 1.4073rem + 1.41vw, 2.5rem);
+  --space-l-xl: clamp(2.25rem, 1.7326rem + 2.603vw, 3.75rem);
+  --space-xl-2xl: clamp(3.375rem, 2.8145rem + 2.82vw, 5rem);
+  --space-2xl-3xl: clamp(4.5rem, 3.4653rem + 5.2061vw, 7.5rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1.125rem, 0.6508rem + 2.3861vw, 2.5rem);
+}
+
+/* GRID SYSTEM */
+:root {
+  --grid-max-width: 77.5rem;
+  --grid-gutter: var(
+    --space-s-l,
+    clamp(1.125rem, 0.6508rem + 2.3861vw, 2.5rem)
+  );
+  --grid-columns: 12;
+}

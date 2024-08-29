@@ -1,3 +1,5 @@
+@import "variables.css";
+
 /* GRID SYSTEM BEGIN */
 /* @link https://utopia.fyi/grid/calculator?c=318,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 :root {
@@ -15,8 +17,13 @@ body {
   margin-inline: auto;
 }
 
-body > div {
+div.App {
   display: grid;
   gap: var(--grid-gutter);
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
+}
+
+header {
+  grid-column: 1 / -1;
 }
 /* GRID SYSTEM END */
